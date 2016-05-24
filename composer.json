@@ -1,0 +1,41 @@
+{
+    "name": "neoxia/wegiv",
+    "description": "Magento build for Wegiv",
+    "authors": [
+        {
+            "name": "Anthony Buffet",
+            "email": "anthony.buffet@neoxia.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~4.4",
+        "firegento/mage-ci": "~2.0"
+    },
+    "require": {
+        "aydin-hassan/magento-core-composer-installer" : "~1.0",
+        "magento/magento" : "1.9.1.0",
+        "rossigee/config-envvars" : "~1.0",
+        "neoxia/wegiv-plugin-magento" : "@dev"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:AydinHassan/magento-community.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:neoxia/wegiv-plugin-magento.git"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "htdocs",
+        "map": [
+        	"vendor/rossigee/config-envvars/app htdocs/app/",
+        	"vendor/neoxia/wegiv-plugin-magento/app htdocs/app/"
+        ]
+    }
+}
