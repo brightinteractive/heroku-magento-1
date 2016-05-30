@@ -3,4 +3,7 @@
 	"description": "A small app to easily deploy Magento",
 	"keywords": ["magento", "heroku", "php", "mysql", "apache", "apache2", "nginx"],
 	"addons": ["cleardb:ignite"]
+	"scripts": {
+   	 "postdeploy": "sh hello.sh"
+  	}
 }
