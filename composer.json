@@ -27,9 +27,9 @@
         }
     ],
     "extra": {
-        "magento-root-dir": "htdocs",
+        "magento-root-dir": "magento",
         "map": [
-        	"vendor/rossigee/config-envvars/app htdocs/app/"
+        	"vendor/rossigee/config-envvars/app magento/app/"
         ]
     }
 }
