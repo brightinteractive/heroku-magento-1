@@ -12,6 +12,7 @@
         "firegento/mage-ci": "~2.0"
     },
     "require": {
+        "php": "^5.6.0",
         "aydin-hassan/magento-core-composer-installer" : "~1.0",
         "magento/magento" : "1.9.1.0",
         "rossigee/config-envvars" : "~1.0"
