@@ -23,7 +23,7 @@ database="$(echo $path | grep ? | cut -d? -f1)"
 
 php -f magento/install.php -- --license_agreement_accepted yes \
   --locale en_US --timezone "America/Los_Angeles" --default_currency USD \
-  --db_host $host --db_name $database --db_user magentouser --db_pass password \
+  --db_host $host --db_name $database --db_user $user --db_pass $password \
   --url "www.test.com" --use_rewrites yes \
   --use_secure no --secure_base_url "www.test.com" --use_secure_admin no \
   --skip_url_validation yes \
