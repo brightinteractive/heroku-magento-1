@@ -4,6 +4,6 @@
 	"keywords": ["magento", "heroku", "php", "mysql", "apache", "apache2", "nginx"],
 	"addons": ["cleardb:ignite"],
 	"scripts": {
-   	 "postdeploy": "sh bootstrap.sh"
+   	 "postdeploy": "/bin/bash bootstrap.sh"
   	}
 }
